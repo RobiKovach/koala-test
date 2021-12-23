@@ -191,7 +191,7 @@ span#subscribe-btn-value {
 
 .chanel-list-active .chanel__list-item label::before {
   content: '';
-  background-image: url(../../../app/assets/img/checkbox.svg);
+  background-image: url(../img/checkbox.svg);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -207,7 +207,7 @@ span#subscribe-btn-value {
 
 .chanel-list-active .chanel__list-item input[type="checkbox"]:checked + label::before {
   content: '';
-  background-image: url(../../../app/assets/img/checkboxCheked.svg);
+  background-image: url(../img/checkboxCheked.svg);
   width: 25px;
   height: 25px;
   position: absolute;
