@@ -922,12 +922,15 @@ span#subscribe-btn-value {
   }
   .table__content-main-phone tbody tr:nth-child(2) td:nth-child(1) a {
     width: 112px;
+    background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%);
   }
   .table__content-main-phone tbody tr:nth-child(2) td {
     margin-left: 33px;
   }
   .table__content-main-phone tbody tr:nth-child(2) td a {
     width: 90px;
+    background: linear-gradient(133.32deg, #FDD8A0 3.56%, #FC657C 97.58%);
+    color: #fff;
   }
   .table__content-main-phone tbody tr {
     width: 160%;
