@@ -11,15 +11,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<!-- Favicon -->
-
-	<link rel="manifest" href="./assets/favicon/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#603cba">
-	<meta name="theme-color" content="#ffffff">
-
 	<!-- build:css -->
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="css/table.css">
+	<link rel="stylesheet" href="css/moderator.css">
 	<!-- endbuild -->
 
 
@@ -97,69 +91,25 @@
 	</header>
 
 	<section class="dashboard__table">
-		<p class="dashboard__title">Dashboard</p>
+		<p class="dashboard__title">Moderator management</p>
+		<div class="moderator__header">
+			<div class="btn-moderator">
+				<img src="img/btn-moderator.svg" alt="moderator">
+				добавить модератора
+			</div>
+			<div id="moderator-window" class="window-active">
+				<span class="popup-header">Новый модератор</span>
+				<form action="#">
+					<input class="popup-input e-mail" type="e-mail" placeholder="Введите E-mail">
+					<input class="popup-input nick" type="text" placeholder="Nickname">
+					<input class="popup-input pass" type="password" placeholder="Password">
+					<input class="popup__submit" type="submit" value="Добавить">
+				</form>
+			</div>
+			<input type="text" class="form-search" placeholder="Введите nickname">
+		</div>
 		<div class="table__content">
 			<div class="table__content-header">
-				<div class="table__content-header-left">
-					<div class="chanels-value">
-						<button class="btn-fill chanels-fill">Канал</button>
-						<span onclick="chanelsSelectBtn()" id="chanels-btn-value" class="chanels-btn-value">YouTube</span>
-					</div>
-						<div id="chanels-drop" class="chanel-list">
-							<li class="chanel__list-item" data-value="chnl-1">
-								<input id="Youtube" type="checkbox" class="checkbox-input" value="Youtube" name="Youtube" checked>
-  								<label class="checkbox-title" for="Youtube">Youtube</label>
-							</li>
-							<li class="chanel__list-item" data-value="chnl-2">
-								<input id="Twitter" type="checkbox" class="checkbox-input" value="Twitter" name="Twitter">
-  								<label class="checkbox-title" for="Twitter">Twitter</label>
-							</li>
-							<li class="chanel__list-item" data-value="chnl-3">
-								<input id="Instagram" type="checkbox" class="checkbox-input" value="Instagram" name="Instagram" >
-  								<label class="checkbox-title" for="Instagram">Instagram</label>
-							</li>
-							<li class="chanel__list-item" data-value="chnl-4">
-								<input id="Tik Tok" type="checkbox" class="checkbox-input" value="Tik Tok" name="Tik Tok">
-  								<label class="checkbox-title" for="Tik Tok">Tik Tok</label>
-							</li>
-						</div>
-					<div class="subscribe-value">
-						<button class="btn-fill subscribe-fill">Подписчики</button>
-						<span onclick="chanelsSelectBtn()" id="subscribe-btn-value" class="subscribe-btn-value">100 000</span>
-					</div>
-					
-					<div id="subscribe-drop" class="subscribe-list">
-						<li class="subscribe-list-item" data-value="chnl-1">
-								<input id="first-subscribe" type="checkbox" class="checkbox-input" value="100 000" name="subscribe" checked>
-  								<label class="checkbox-title" for="first-subscribe">100 000</label>
-							</li>
-							<li class="subscribe-list-item" data-value="chnl-2">
-								<input id="second-subscribe" type="checkbox" class="checkbox-input" value="Twitter" name="subscribe">
-  								<label class="checkbox-title" for="second-subscribe">500 000</label>
-							</li>
-							<li class="subscribe-list-item" data-value="chnl-3">
-								<input id="three-subscribe" type="checkbox" class="checkbox-input" value="Instagram" name="subscribe" >
-  								<label class="checkbox-title" for="three-subscribe">1 000 000</label>
-							</li>
-							<li class="subscribe-list-item" data-value="chnl-4">
-								<input id="four-subscribe" type="checkbox" class="checkbox-input" value="Tik Tok" name="subscribe">
-  								<label class="checkbox-title" for="four-subscribe">Выше 2 млн</label>
-							</li>
-					</div>
-					<!-- /.subscribe-list -->
-				</div>
-				<!-- /.table__content-header-left -->
-				<div class="table__content-header-right">
-					<button class="btn-fill">Сбросить все фильтры</button>
-					<div class="table__search">
-						<input type="text" id="table__search" placeholder="Введите e-mail">
-						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M17.5 17.5L13.7617 13.755L17.5 17.5ZM15.8334 8.75C15.8334 10.6286 15.0871 12.4303 13.7587 13.7587C12.4303 15.0871 10.6286 15.8333 8.75002 15.8333C6.8714 15.8333 5.06973 15.0871 3.74135 13.7587C2.41296 12.4303 1.66669 10.6286 1.66669 8.75C1.66669 6.87139 2.41296 5.06971 3.74135 3.74133C5.06973 2.41295 6.8714 1.66667 8.75002 1.66667C10.6286 1.66667 12.4303 2.41295 13.7587 3.74133C15.0871 5.06971 15.8334 6.87139 15.8334 8.75V8.75Z" stroke="black" stroke-width="2" stroke-linecap="round"/>
-						</svg>
-					</div>
-					<button class="btn-fill">Управление модераторами</button>
-				</div>
-				<!-- /.able__content-header-right -->
 			</div>
 			<!-- /.table__content-header -->
 			<table class="table__content-main">
@@ -167,32 +117,24 @@
         			<tr>
         			    <th>
 							<span>#</span>
-							<span>Username</span>
-							<img src="img/Arrow-up.svg" alt="Arrow">
+							<span>Модераторы</span>
 						</th>
-        			    <th>Социальные сети <br> — approved</th>
+        			    <th>Количество <br> верификаций</th>
         			    <th>
-							Количество <br> подписчиков
-							<img src="img/Arrow-up.svg" alt="Arrow">
-						</th>
-        			    <th>
-							Количество <br> upload
-							<img src="img/arrow-down.svg" alt="Arrow">
+							Не отвеченные <br> уведомления
+							
 						</th>
         			    <th>
-							Проданных <br> лотов
-							<img src="img/Arrow-up.svg" alt="Arrow">
+							Проданных лотов <br> по модератору
 						</th>
         			    <th>
 							Выплачено
-							<img src="img/arrow-down.svg" alt="Arrow">
 						</th>
         			    <th>
-							Лотов <br> на продаже
+							Забрать право <br> работы
 						</th>
         			    <th>
-							Стоимость <br> лотов
-							<img src="img/Arrow-up.svg" alt="Arrow">
+							Заметки
 						</th>
         			</tr>
     			</thead>
@@ -203,14 +145,17 @@
 							<a href="" class="user-name">Bes and second row name</a>
 						</td>
     			        <td><span>Заголовок 2</span>
-							Youtube / TikTok <br> Instagram
+							10
 						</td>
-    			        <td><span>Заголовок 3</span>1 000 000</td>
-    			        <td><span>Заголовок 4</span>10</td>
-    			        <td><span>Заголовок 5</span>4</td>
-    			        <td><span>Заголовок 6</span>100 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>500 eth</td>
+    			        <td><span>Заголовок 3</span>4</td>
+    			        <td><span>Заголовок 4</span>4</td>
+    			        <td><span>Заголовок 5</span>10 150 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/delete-transparent.svg" alt="delete">
+						</td>
+    			        <td><span>Заголовок 7</span>
+							Заметки строка 1 заметки строка 2 можно попробовать даже в три строки
+						</td>
     			    </tr>
     			    <!-- Еще строки -->        
     			    <tr>
@@ -219,15 +164,16 @@
 							<a href="" class="user-name">Velosipedovich
 AAaaa4</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							Youtube / TikTok Twitter
+    			        <td><span>Заголовок 2</span>7</td>
+    			        <td><span>Заголовок 3</span>3</td>
+    			        <td><span>Заголовок 4</span>6</td>
+    			        <td><span>Заголовок 5</span>4 000 009 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/Delete.svg" alt="delete">
 						</td>
-    			        <td><span>Заголовок 3</span>45 000 000</td>
-    			        <td><span>Заголовок 4</span>7</td>
-    			        <td><span>Заголовок 5</span>6</td>
-    			        <td><span>Заголовок 6</span>400 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>500 000 eth</td>
+    			        <td><span>Заголовок 7</span>
+							Комментарии к работе над этим проектом
+						</td>
     			    </tr>
 					 <!-- Еще строки -->        
     			    <tr>
@@ -235,15 +181,16 @@ AAaaa4</a>
 							003
 							<a href="" class="user-name">frog</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							Youtube / TikTok <br> Twitter
+    			        <td><span>Заголовок 2</span>5</td>
+    			        <td><span>Заголовок 3</span>1</td>
+    			        <td><span>Заголовок 4</span>2</td>
+    			        <td><span>Заголовок 5</span>0 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/delete-transparent.svg" alt="delete">
 						</td>
-    			        <td><span>Заголовок 3</span>400 000</td>
-    			        <td><span>Заголовок 4</span>5</td>
-    			        <td><span>Заголовок 5</span>2</td>
-    			        <td><span>Заголовок 6</span>500 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>500 eth</td>
+    			        <td><span>Заголовок 7</span>
+							Заметки пнуть модератора за бездействие
+						</td>
     			    </tr>
 					 <!-- Еще строки -->        
     			    <tr>
@@ -251,15 +198,16 @@ AAaaa4</a>
 							004
 							<a href="" class="user-name">Grey</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							Youtube / TikTok Twitter / Instagram
+    			        <td><span>Заголовок 2</span>5</td>
+    			        <td><span>Заголовок 3</span>0</td>
+    			        <td><span>Заголовок 4</span>1</td>
+    			        <td><span>Заголовок 5</span>450 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/delete-transparent.svg" alt="delete">
 						</td>
-    			        <td><span>Заголовок 3</span>100 000</td>
-    			        <td><span>Заголовок 4</span>5</td>
-    			        <td><span>Заголовок 5</span>1</td>
-    			        <td><span>Заголовок 6</span>450 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>500 eth</td>
+    			        <td><span>Заголовок 7</span>
+							Заметку можно написать в две строки или одну
+						</td>
     			    </tr>
 					 <!-- Еще строки -->        
     			    <tr>
@@ -267,15 +215,16 @@ AAaaa4</a>
 							005
 							<a href="" class="user-name">dr_drop</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							Instagram / Youtube
+    			        <td><span>Заголовок 2</span>4</td>
+    			        <td><span>Заголовок 3</span>0</td>
+    			        <td><span>Заголовок 4</span>5</td>
+    			        <td><span>Заголовок 5</span>14 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/delete-transparent.svg" alt="delete">
 						</td>
-    			        <td><span>Заголовок 3</span>1 000</td>
-    			        <td><span>Заголовок 4</span>4</td>
-    			        <td><span>Заголовок 5</span>5</td>
-    			        <td><span>Заголовок 6</span>750 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>700 eth</td>
+    			        <td><span>Заголовок 7</span>
+							Модератор молодец
+						</td>
     			    </tr>
 					 <!-- Еще строки -->        
     			    <tr>
@@ -283,15 +232,16 @@ AAaaa4</a>
 							006
 							<a href="" class="user-name">Be$predel111</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							Youtube / TikTok
+    			        <td><span>Заголовок 2</span>1</td>
+    			        <td><span>Заголовок 3</span>9</td>
+    			        <td><span>Заголовок 4</span>0</td>
+    			        <td><span>Заголовок 5</span>2 000 eth</td>
+    			        <td><span>Заголовок 6</span>
+							<img class="delete-shadow" src="img/Delete-active.svg" alt="delete">
 						</td>
-    			        <td><span>Заголовок 3</span>25 000 000 000</td>
-    			        <td><span>Заголовок 4</span>1</td>
-    			        <td><span>Заголовок 5</span>0</td>
-    			        <td><span>Заголовок 6</span>200 eth</td>
-    			        <td><span>Заголовок 7</span>3</td>
-    			        <td><span>Заголовок 8</span>2 000 000 eth</td>
+    			        <td><span>Заголовок 7</span>
+							Ответь на уведомления и будет счастье
+						</td>
     			    </tr>
     			</tbody>
 			</table>
@@ -313,7 +263,7 @@ AAaaa4</a>
     			    <!-- Еще строки -->        
     			    <tr>
     			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">User</a>
+							<a href="" class="user-name">Moderator</a>
 						</td>
     			        <td><span>Заголовок 2</span>
 							<a href="" class="user-name">bes</a>
@@ -327,123 +277,90 @@ AAaaa4</a>
 					 <!-- Еще строки -->        
     			    <tr>
     			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">Сети</a>
-						</td>
-    			        <td><span>Заголовок 2</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/tiktok.svg" alt="tiktok">
-							<img src="img/instagram.svg" alt="instagram">
-						</td>
-    			        <td><span>Заголовок 3</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/tiktok.svg" alt="tiktok">
-							<img src="img/twitter.svg" alt="twitter">
-						</td>
-    			        <td><span>Заголовок 4</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/tiktok.svg" alt="tiktok">
-							<img src="img/twitter.svg" alt="twitter">
-						</td>
-    			        <td><span>Заголовок 5</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/tiktok.svg" alt="tiktok">
-							<img src="img/twitter.svg" alt="twitter">
-							<img src="img/instagram.svg" alt="instagram">
-						</td>
-    			        <td><span>Заголовок 6</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/instagram.svg" alt="instagram">
-						</td>
-    			        <td><span>Заголовок 6</span>
-							<img src="img/youtobe.svg" alt="youtobe">
-							<img src="img/tiktok.svg" alt="tiktok">
-						</td>
-    			    </tr>
-					 <!-- Еще строки -->        
-    			    <tr>
-    			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">Подписчиков</a>
-						</td>
-    			        <td><span>Заголовок 2</span>
-							1 000 000
-						</td>
-    			        <td><span>Заголовок 3</span>45 000 000</td>
-    			        <td><span>Заголовок 4</span>400 000</td>
-    			        <td><span>Заголовок 5</span>100 000</td>
-    			        <td><span>Заголовок 6</span>1000</td>
-    			        <td><span>Заголовок 7</span>25 000 000</td>
-    			    </tr>
-					 <!-- Еще строки -->        
-    			    <tr>
-    			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">Аплоидов</a>
+							<a href="" class="user-name">Верификаций</a>
 						</td>
     			        <td><span>Заголовок 2</span>
 							10
 						</td>
-    			        <td><span>Заголовок 3</span>7</td>
-    			        <td><span>Заголовок 4</span>5</td>
-    			        <td><span>Заголовок 5</span>5</td>
-    			        <td><span>Заголовок 6</span>4</td>
-    			        <td><span>Заголовок 7</span>1</td>
+    			        <td><span>Заголовок 3</span>
+							7
+						</td>
+    			        <td><span>Заголовок 4</span>
+							5
+						</td>
+    			        <td><span>Заголовок 5</span>
+							5
+						</td>
+    			        <td><span>Заголовок 6</span>
+							4
+						</td>
+    			        <td><span>Заголовок 6</span>
+							1
+						</td>
+    			    </tr>
+					 <!-- Еще строки -->        
+    			    <tr>
+    			        <td><span>Заголовок 1</span>
+							<a href="" class="user-name">Уведомления/не отвеченные</a>
+						</td>
+    			        <td><span>Заголовок 2</span>
+							4
+						</td>
+    			        <td><span>Заголовок 3</span>3</td>
+    			        <td><span>Заголовок 4</span>1</td>
+    			        <td><span>Заголовок 5</span>0</td>
+    			        <td><span>Заголовок 6</span>0</td>
+    			        <td><span>Заголовок 7</span>9</td>
     			    </tr>
 					 <!-- Еще строки -->        
     			    <tr>
     			        <td><span>Заголовок 1</span>
 							<a href="" class="user-name">Проданных лотов</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							4
-						</td>
+    			        <td><span>Заголовок 2</span>4</td>
     			        <td><span>Заголовок 3</span>6</td>
     			        <td><span>Заголовок 4</span>2</td>
     			        <td><span>Заголовок 5</span>1</td>
     			        <td><span>Заголовок 6</span>5</td>
     			        <td><span>Заголовок 7</span>0</td>
     			    </tr>
-					<!-- Еще строки -->  
-					<tr>
+					 <!-- Еще строки -->        
+    			    <tr>
     			        <td><span>Заголовок 1</span>
 							<a href="" class="user-name">Выплачено</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							100 eth
-						</td>
-    			        <td><span>Заголовок 3</span>400 eth</td>
-    			        <td><span>Заголовок 4</span>500 eth</td>
+    			        <td><span>Заголовок 2</span>10 150 eth</td>
+    			        <td><span>Заголовок 3</span>4 000 009 eth</td>
+    			        <td><span>Заголовок 4</span>0 eth</td>
     			        <td><span>Заголовок 5</span>450 eth</td>
-    			        <td><span>Заголовок 6</span>750 eth</td>
-    			        <td><span>Заголовок 7</span>200 eth</td>
+    			        <td><span>Заголовок 6</span>14 eth</td>
+    			        <td><span>Заголовок 7</span>2 000 eth</td>
+    			    </tr>
+					<!-- Еще строки -->  
+					<tr>
+    			        <td><span>Заголовок 1</span>
+							<a href="" class="user-name">Забрать права</a>
+						</td>
+    			        <td><span>Заголовок 2</span><img src="img/x-btn.svg" alt="delete"></td>
+    			        <td><span>Заголовок 3</span><img src="img/x-btn.svg" alt="delete"></td>
+    			        <td><span>Заголовок 4</span><img src="img/x-btn.svg" alt="delete"></td>
+    			        <td><span>Заголовок 5</span><img src="img/x-btn.svg" alt="delete"></td>
+    			        <td><span>Заголовок 6</span><img src="img/x-btn.svg" alt="delete"></td>
+    			        <td><span>Заголовок 7</span><img src="img/x-btn.svg" alt="delete"></td>
     			    </tr>
 					<!-- Еще строки -->
 					<tr>
     			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">Лотов на продаже</a>
+							<a href="" class="user-name">Заметки</a>
 						</td>
-    			        <td><span>Заголовок 2</span>
-							3
-						</td>
-    			        <td><span>Заголовок 3</span>3</td>
-    			        <td><span>Заголовок 4</span>3</td>
-    			        <td><span>Заголовок 5</span>3</td>
-    			        <td><span>Заголовок 6</span>3</td>
-    			        <td><span>Заголовок 7</span>3</td>
+    			        <td><span>Заголовок 2</span>Заметки</td>
+    			        <td><span>Заголовок 3</span>Заметки</td>
+    			        <td><span>Заголовок 4</span>Заметки</td>
+    			        <td><span>Заголовок 5</span>Заметки</td>
+    			        <td><span>Заголовок 6</span>Заметки</td>
+    			        <td><span>Заголовок 7</span>Заметки</td>
     			    </tr>
-					<!-- Еще строки --> 
-					<tr>
-    			        <td><span>Заголовок 1</span>
-							<a href="" class="user-name">Общая стоим. лотов</a>
-						</td>
-    			        <td><span>Заголовок 2</span>
-							500 eth
-						</td>
-    			        <td><span>Заголовок 3</span>500 000 eth</td>
-    			        <td><span>Заголовок 4</span>500 eth</td>
-    			        <td><span>Заголовок 5</span>500 eth</td>
-    			        <td><span>Заголовок 6</span>700 eth</td>
-    			        <td><span>Заголовок 7</span>2 000 000 eth</td>
-    			    </tr>
-					<!-- Еще строки -->     
+					<!-- Еще строки -->    
     			</tbody>
 			</table>
 			<!-- /.table__content-main-phone -->
