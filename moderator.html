@@ -98,10 +98,31 @@
 				добавить модератора
 			</div>
 			<div id="moderator-window" class="moderator-window">
-				<span class="popup-header">Новый модератор</span>
+				<div class="popup-header-moderator">
+					<a href="#" class="close-btn-popup">
+						<img src="img/close-btn.svg" alt="close-btn">
+					</a>
+					<span class="popup-header">Новый модератор</span>
+				</div>
 				<form action="#">
-					<input class="popup-input e-mail" type="e-mail" placeholder="Введите E-mail">
-					<input class="popup-input nick" type="text" placeholder="Nickname">
+					<div class="input-mail">
+						<input class="popup-input e-mail " id="e-mail" type="e-mail" placeholder="Введите E-mail">
+						<!--Чтоб подсветить красным ошибку вставить класс input_error-->
+						<!--Чтоб подсветить зеленым подтвержение верно вставить класс input_done-->
+						<span class="confirmation_none"></span>
+						<!--Чтоб подсветить галочкой подтвержение верно изменить класс на confirmation-->
+						<label class="hint_none" for="e-mail">Не правильный формат поля e-mail </label>
+						<!--Чтоб подсветить красным ошибку поменять класс hint_error-->
+					</div>
+					<div class="input-nickname">
+						<input class="popup-input nick " id="nick" type="text" placeholder="Nickname">
+						<!--Чтоб подсветить красным ошибку вставить класс input_error-->
+						<!--Чтоб подсветить зеленым подтвержение верно вставить класс input_done-->
+						<span class="confirmation_none"></span>
+						<!--Чтоб подсветить галочкой подтвержение верно изменить класс на confirmation-->
+						<label class="hint_none" for="nick">Такой nickname уже зарегистрирован</label>
+						<!--Чтоб подсветить красным ошибку поменять класс hint_error-->
+					</div>
 					<div class="pass">
 						<input class="popup-input" type="password" placeholder="Password">
 						<span class="lock"></span>
