@@ -106,6 +106,16 @@ span#subscribe-btn-value {
     align-items: center;
     position: relative;
 }
+.nickname-search{
+    position: relative;
+}
+span.search-btn {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+    display: none;
+}
 a.close-btn-popup {
     position: absolute;
     right: -60px;
@@ -1482,6 +1492,9 @@ margin-right: 10px;
 
     .popup-header-moderator{
         width: 100%;
+    }
+    span.search-btn {
+        display: flex;
     }
 
     a.close-btn-popup {
