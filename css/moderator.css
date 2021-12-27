@@ -80,7 +80,7 @@ span#subscribe-btn-value {
 .moderator-window{
     display: none;
 }
-.window-active {
+.moderator-active {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -122,15 +122,39 @@ span#subscribe-btn-value {
     width: 100%;
     position: relative;
 }
-.popup-input::before {
+.pass{
+    position: relative;
+}
+.lock::before {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     display: flex;
-    top: 0;
-    left: 0;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+    z-index: 10;
     background-image: url(../img/pass-lock.svg);
+    box-shadow: -4px -4px 12px #FFFFFF,
+    4px 4px 12px #CAD2D9;
+    border-radius: 22px;
+    transition: 0.3s;
+}
+.lock:hover::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    top: 11px;
+    right: 11px;
+    cursor: pointer;
+    z-index: 10;
+    background-image: url(../img/pass-lock-color.svg);
+    box-shadow: -4px -4px 12px #FFFFFF,
+        4px 4px 12px #CAD2D9;
+    border-radius: 22px;
 }
 .popup__submit{
     display: flex;

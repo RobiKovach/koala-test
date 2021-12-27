@@ -16,6 +16,7 @@ function chanelsSelectBtn() {
     }
 }
 chanelsBtn.addEventListener('click', chanelsSelectBtn);
+
 subscribeBtnValue.addEventListener('click', () => {
     if(!chanelsBoxes.classList.toggle('chanel-list')) {
         chanelsBoxes.classList.add('chanel-list-active');

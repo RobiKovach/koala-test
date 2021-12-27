@@ -97,12 +97,15 @@
 				<img src="img/btn-moderator.svg" alt="moderator">
 				добавить модератора
 			</div>
-			<div id="moderator-window" class="window-active">
+			<div id="moderator-window" class="moderator-window">
 				<span class="popup-header">Новый модератор</span>
 				<form action="#">
 					<input class="popup-input e-mail" type="e-mail" placeholder="Введите E-mail">
 					<input class="popup-input nick" type="text" placeholder="Nickname">
-					<input class="popup-input pass" type="password" placeholder="Password">
+					<div class="pass">
+						<input class="popup-input" type="password" placeholder="Password">
+						<span class="lock"></span>
+					</div>
 					<input class="popup__submit" type="submit" value="Добавить">
 				</form>
 			</div>
@@ -465,7 +468,7 @@ AAaaa4</a>
 
 	<!-- build:js -->
 	<script src="js/app.js"></script>
-	<script src="js/select.js"></script>
+	<script src="js/moderator.js"></script>
 	<!-- endbuild -->
 
 
