@@ -1,8 +1,7 @@
-const chanelsBtn = document.querySelector('.chanels-fill')
-const chanelsBtnBox = document.querySelector('.chanels-value')
+const chanelsBtn = document.querySelector('.chanels-value')
+const chanelsBtnPhone = document.querySelector('.chanels-btn-value')
 const chanelsBoxes = document.querySelector('.chanel-list')
-const subscribeBtn = document.querySelector('.subscribe-fill')
-const subscribeBtnValue = document.querySelector('.chanels-btn-value')
+const subscribeBtn = document.querySelector('.subscribe-value')
 const subscribeBoxes = document.querySelector('.subscribe-list')
 
 
@@ -13,26 +12,31 @@ function chanelsSelectBtn() {
         chanelsBoxes.classList.add('chanel-list-active');
     } else {
         chanelsBoxes.classList.remove('chanel-list-active');
-    }
+    } 
+    
 }
-chanelsBtn.addEventListener('click', chanelsSelectBtn);
-
-subscribeBtnValue.addEventListener('click', () => {
-    if(!chanelsBoxes.classList.toggle('chanel-list')) {
-        chanelsBoxes.classList.add('chanel-list-active');
+chanelsBtn.addEventListener('click', (event) => {
+    const e = event.target;
+    if (!e.classList.contains('chanels-btn-value')) {
+        console.log(e);
+        chanelsSelectBtn()
     } else {
-        chanelsBoxes.classList.remove('chanel-list-active');
+        chanelsSelectBtn()
+        console.log('false');
+        
+        
     }
 });
 
+
 window.onclick = function(event) {
-  if (!event.target.matches('.chanels-fill')) {
+  if (!event.target.matches('.chanels-value')) {
     if (chanelsBoxes.classList.contains('chanel-list-active')) {
         chanelsBoxes.classList.remove('chanel-list-active');
         chanelsBoxes.classList.add('chanel-list')
     }
   }
-  if (!event.target.matches('.subscribe-fill')) {
+  if (!event.target.matches('.subscribe-value')) {
     if (subscribeBoxes.classList.contains('subscribe-list-active')) {
         subscribeBoxes.classList.remove('subscribe-list-active');
         subscribeBoxes.classList.add('subscribe-list')

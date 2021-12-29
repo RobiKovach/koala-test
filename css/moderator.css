@@ -1485,7 +1485,7 @@ margin-right: 10px;
     }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 525px) {
     .dashboard__table {
         padding: 0 10px;
     }
