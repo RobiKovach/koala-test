@@ -1491,7 +1491,10 @@ margin-right: 10px;
     }
 
     .nickname-search {
-        width: 85%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center
     }
 
     .popup-header-moderator{
