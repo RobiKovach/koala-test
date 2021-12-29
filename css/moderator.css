@@ -1496,6 +1496,9 @@ margin-right: 10px;
         justify-content: center;
         align-items: center
     }
+    span.search-btn {
+        right: 40px;
+    }
 
     .popup-header-moderator{
         width: 100%;
