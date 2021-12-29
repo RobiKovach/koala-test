@@ -1626,6 +1626,9 @@ margin-right: 10px;
         gap: 35px;
         border-radius: 30px;
     }
+    span.search-btn {
+        right: 15px;
+    }
 
     .nickname-search {
         width: 100%;
