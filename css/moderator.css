@@ -1490,6 +1490,10 @@ margin-right: 10px;
         padding: 0 10px;
     }
 
+    .nickname-search {
+        width: 85%;
+    }
+
     .popup-header-moderator{
         width: 100%;
     }
@@ -1615,6 +1619,10 @@ margin-right: 10px;
         width: 80%;
         gap: 35px;
         border-radius: 30px;
+    }
+
+    .nickname-search {
+        width: 100%;
     }
 
     a.close-btn-popup {
