@@ -12,6 +12,7 @@
 .page-user__container {
   max-width: 1440px;
   padding: 0 90px;
+  margin: 0 auto;
 }
 
 .page-user__title {
