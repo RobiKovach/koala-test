@@ -8,14 +8,14 @@ const linkEye = document.getElementById('link-eye');
 function show() {
     pass.setAttribute('type', 'text');
     pass.classList.add('show-pass');
-    eye.src = "/img/eye-show.svg";
+    eye.src = "../img/eye-show.svg";
     eye.classList.add('show-eye');
 }
 
 function hide() {
     pass.setAttribute('type', 'password');
     pass.classList.remove('show-pass');
-    eye.src = "/img/uil_eye-slash.svg";
+    eye.src = "../img/uil_eye-slash.svg";
     eye.classList.remove('show-eye');
 }
 
