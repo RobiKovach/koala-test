@@ -13,7 +13,7 @@
 
 	<!-- build:css -->
 	<link rel="stylesheet" href="css/main.min.css">
-	<link rel="stylesheet" href="css/editpage-moderator.css">
+	<link rel="stylesheet" href="css/dashboard-notification.css">
 	<!-- endbuild -->
 
 
@@ -90,28 +90,29 @@
 		</div>
 	</header>
 
-    <section class="editpage__moderator moderator-editpage">
-        <div class="moderator-editpage__title">Dashboard — Edit page moderator</div>
-        <div class="moderator-editpage__orange-row"></div>
-        <div class="moderator-editpage__purle-row"></div>
-        <div class="moderator-editpage__orangesmall-row"></div>
-        <div class="moderator-editpage__piramide"></div>
-        <div class="moderator-editpage__piramide-big"></div>
-        <div class="moderator-editpage__email-title">example@gmail.com</div>
-        <div class="moderator-editpage__login login-moderator">
-            <div class="login-moderator__title">
-                Edit moderator data 
+    <div class="dashboard__notification notification-dashboard">
+        <div class="notification-dashboard__title">Dashboard — notification</div>
+        <div class="notification-dashboard__action action-notification">
+            <div class="action-notification__left left-action">
+                <div class="left-action__switch switch-left">
+                    <input type="radio" name="checker" id="open" checked>
+                    <input type="radio" name="checker" id="closed" >
+                    <label for="open" class="switch-left__btn">Открытые</label>
+                    <label for="closed" class="switch-left__on">Закрытые</label>
+                </div>
+                <div class="left-action__search search-left">
+                    <input type="search" placeholder="Search" id="search-left__input" class="search-left__input">
+                    <label for="search-left__input" class="search-left__btn"><img src="img/seacrh-icon.svg" alt=""></label>
+                </div>
             </div>
-            <div class="login-moderator__nickname">
-                <input type="text" placeholder="Megatrahhhher69">
+            <div class="action-notification__right right-action">
+                <div class="right-action__select select-right">
+                    <button class="select-right__btn">Сортировка <span></span></button>
+                </div>
             </div>
-            <div class="login-moderator__password">
-                <input id="password__login" type="password" placeholder="*****">
-                <a id="link-eye" href=""></a>
-            </div>
-            <button type="submit" class="login-moderator__button">Save</button>
         </div>
-    </section>
+        <div class="notification-dashboard__content"></div>
+    </div>
 
 	<footer class="cabinet-wrapper__footer">
 		<ul class="footer-list">
@@ -182,7 +183,7 @@
 
 	<!-- build:js -->
 	<script src="js/app.js"></script>
-	<script src="js/editpage-moderator.js"></script>
+	<script src="js/dashboard-notification.js"></script>
 	<!-- endbuild -->
 
 

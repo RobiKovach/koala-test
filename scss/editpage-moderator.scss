@@ -174,10 +174,15 @@
             box-shadow: -4px -4px 12px #FFFFFF,
             4px 4px 12px #CAD2D9;
             border-radius: 22px;
-            padding: 7px;
-            img.show-eye{
-                padding: 7px;
-            }
+            padding: 19px;
+            background-image: url(../img/uil_eye-slash.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+        a.show-eye{
+           background-image: url(../img/eye-show.svg);
+           background-repeat: no-repeat;
+           background-position: center center;
         }
     }
 
