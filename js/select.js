@@ -18,11 +18,9 @@ function chanelsSelectBtn() {
 chanelsBtn.addEventListener('click', (event) => {
     const e = event.target;
     if (!e.classList.contains('chanels-btn-value')) {
-        console.log(e);
         chanelsSelectBtn()
     } else {
         chanelsSelectBtn()
-        console.log('false');
         
         
     }

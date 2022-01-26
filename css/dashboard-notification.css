@@ -182,9 +182,10 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 300px;
   height: 50px;
   background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%);
@@ -205,6 +206,7 @@
           justify-content: space-between;
   width: 100%;
   padding: 10px 0px 10px 20px;
+  margin: 0px 0px 10px 0px;
 }
 
 .select-right__btn span {
@@ -218,4 +220,87 @@
   margin: 0px 20px 0px 0px;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.select-right__box-select {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.box-select__show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  z-index: 3;
+}
+
+.box-select__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-box {
+  margin: 0px 0px 4px 0px;
+}
+
+.item-box label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%);
+  -webkit-box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43), -8px -8px 12px #CAD2D9;
+          box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43), -8px -8px 12px #CAD2D9;
+  border-radius: 35px;
+  width: 280px;
+  height: 40px;
+  padding: 0px 0px 0px 20px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 100%;
+  color: #A1BACB;
+}
+
+.item-box #check1 {
+  z-index: 3;
+}
+
+.item-box #check2 {
+  z-index: 2;
+}
+
+.item-box #check3 {
+  z-index: 1;
+}
+
+.item-box input[type="checkbox"]:checked + label {
+  background: linear-gradient(0deg, rgba(239, 110, 71, 0.05), rgba(239, 110, 71, 0.05)), linear-gradient(183.6deg, #FFF8F1 25.58%, #FFF1F1 66.56%);
+  -webkit-box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43), -8px -8px 12px #D9D0CA;
+          box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43), -8px -8px 12px #D9D0CA;
+  border-radius: 35px;
+  color: #EF6E47;
 }

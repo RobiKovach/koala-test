@@ -127,7 +127,7 @@
 .select-right {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
     width: 300px;
     height: 50px;
     background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%);
@@ -140,6 +140,7 @@
         justify-content: space-between;
         width: 100%;
         padding: 10px 0px 10px 20px;
+        margin: 0px 0px 10px 0px;
         span{
             display: flex;
             width: 10px;
@@ -148,7 +149,74 @@
             border-bottom: 3px solid #C4C4C4;
             margin: 0px 20px 0px 0px;
             transform: rotate(-45deg);
+            transition: 0.3s;
         }
 
     }
+
+    &__box-select {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: 3;
+    }
 }
+
+.box-select__show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 3;
+}
+
+.box-select {
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.item-box {
+    margin: 0px 0px 4px 0px;
+    &__input {}
+
+    label{
+        display: flex;
+        align-items: center;
+        background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%);
+        box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43),
+        -8px -8px 12px #CAD2D9;
+        border-radius: 35px;
+        width: 280px;
+        height: 40px;
+        padding: 0px 0px 0px 20px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        color: #A1BACB;
+    }
+
+    #check1{
+        z-index: 3;
+    }
+
+    #check2 {
+        z-index: 2;
+    }
+
+    #check3 {
+        z-index: 1;
+    }
+    
+    input[type="checkbox"]:checked+label {
+        background: linear-gradient(0deg, rgba(239, 110, 71, 0.05), rgba(239, 110, 71, 0.05)), linear-gradient(183.6deg, #FFF8F1 25.58%, #FFF1F1 66.56%);
+        box-shadow: 6px 6px 12px rgba(255, 255, 255, 0.43),
+        -8px -8px 12px #D9D0CA;
+        border-radius: 35px;
+        color: #EF6E47;
+    }
+}
+
+//====================================================================================================

@@ -28,5 +28,21 @@ for (var i=0; i<input.length; i++) {
     })
 };
 
-////
+//// select
+
+const openSelectBtn = document.querySelector('.select-right__btn');
+const selectBlock = document.querySelector('.select-right__box-select');
+const selectArrow = document.getElementById('select-arrow');
+
+
+openSelectBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  if(!selectBlock.classList.toggle('select-right__box-select')) {
+        selectBlock.classList.add('box-select__show');
+        selectArrow.style = `transform: rotate(135deg); margin: 10px 20px 0px 0px;`;
+    } else {
+        selectBlock.classList.remove('box-select__show');
+        selectArrow.style = `transform: rotate(-45deg); margin: 0px 20px 0px 0px;`;
+    } 
+})
 
