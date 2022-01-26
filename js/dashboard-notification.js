@@ -58,6 +58,7 @@ popupBtn.addEventListener('click', () => {
   popupWindow.style.display = "flex";
 })
 
+
 popupClose.addEventListener('click', () => {
   popupWindow.style.display = "none";
 })
