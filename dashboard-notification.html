@@ -125,8 +125,135 @@
                 </div>
             </div>
         </div>
-        <div class="notification-dashboard__content"></div>
+        <div class="notification-dashboard__content content-notification">
+			<div class="content-notification__title">Уведомления</div>
+			<div class="content-notification__table table-content">
+				<div class="table-content__head head-table">
+					<div class="head-table__item">#</div>
+					<div class="head-table__item">Type</div>
+					<div class="head-table__item">User</div>
+					<div class="head-table__item">Date</div>
+					<div class="head-table__item">Comment</div>
+					<div class="head-table__item">Status</div>
+					<div class="head-table__item">Action</div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0001</div>
+					<div class="column-table__item">dangerous</div>
+					<div class="column-table__item">Damage100</div>
+					<div class="column-table__item">24.11.2021</div>
+					<div class="column-table__item">Благородные стремления не спасут: кровь стынет в жилах</div>
+					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item"><button id="0001" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0002</div>
+					<div class="column-table__item">beautiful</div>
+					<div class="column-table__item">Worms</div>
+					<div class="column-table__item">29.11.2021</div>
+					<div class="column-table__item">Органический трафик не стал ограничивающим фактором</div>
+					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item"><button id="0002" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0003</div>
+					<div class="column-table__item">simplex</div>
+					<div class="column-table__item">PizZaMan</div>
+					<div class="column-table__item">02.12.2021</div>
+					<div class="column-table__item">Сейчас всё чаще звучит ласковый перезвон вертикали власти</div>
+					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item"><button id="0003" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0004</div>
+					<div class="column-table__item">complex </div>
+					<div class="column-table__item">Omicron4ik</div>
+					<div class="column-table__item">21.01.2022</div>
+					<div class="column-table__item">Современная методология разработки показала себя во всей красе</div>
+					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item"><button id="0004" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0005</div>
+					<div class="column-table__item">dangerous</div>
+					<div class="column-table__item">DaVinchy</div>
+					<div class="column-table__item">24.11.2021</div>
+					<div class="column-table__item">Частотность поисковых запросов даёт нам право принимать самостоятельные решения</div>
+					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item"><button id="0005" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0006</div>
+					<div class="column-table__item">beautiful</div>
+					<div class="column-table__item">Table_4</div>
+					<div class="column-table__item">29.11.2021</div>
+					<div class="column-table__item">Британские ученые заявили, что жизнь прекрасна</div>
+					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item"><button id="0006" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0007</div>
+					<div class="column-table__item">simplex</div>
+					<div class="column-table__item">PizZaMan88 1212shushistiy</div>
+					<div class="column-table__item">02.12.2021</div>
+					<div class="column-table__item">Жизнь прекрасна</div>
+					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item"><button id="0007" class="answer">Answer</button></div>
+				</div>
+				<div class="table-content__column column-table">
+					<div class="column-table__item">0008</div>
+					<div class="column-table__item">complex</div>
+					<div class="column-table__item">_boss</div>
+					<div class="column-table__item">21.01.2022</div>
+					<div class="column-table__item">Органический трафик не позволил союзу развалиться</div>
+					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item"><button id="0008" class="answer">Answer</button></div>
+				</div>
+			</div>
+		</div>
+		<div class="control-box__pagination pagination-control">
+			<button class="pagination-control__arrow-prev"></button>
+			<button class="pagination-control__number">1</button>
+			<button class="pagination-control__number">2</button>
+			<button class="pagination-control__number">3</button>
+			<button class="pagination-control__number">4</button>
+			<button class="pagination-control__arrow-next"><span></span></button>
+		</div>
     </div>
+
+	<div id="P0001" class="popup__block block-popup">
+		<div class="block-popup__bg"></div>
+		<div class="block-popup__comment comment-block">
+			<div class="comment-block__ident"><span>#</span><span>0001</span></div>
+			<div class="comment-block__text">
+				<p>В рамках спецификации современных стандартов, 
+					действия представителей оппозиции, вне зависимости 
+					от их уровня, должны быть указаны как претенденты на 
+					роль ключевых факторов. Как уже неоднократно упомянуто, 
+					непосредственные участники технического прогресса разоблачены. 
+					Таким образом, глубокий уровень погружения представляет собой 
+					интересный эксперимент проверки системы обучения кадров, 
+					соответствующей насущным потребностям. В рамках спецификации.</p>
+			</div>
+			<div class="comment-block__action action-comment">
+				<div class="action-comment__ok">
+					<img src="img/status-ok.svg" alt="">
+				</div>
+				<div class="action-comment__btn">
+					<button>Прочитано</button>
+				</div>
+			</div>
+		</div>
+		<div class="block-popup__answer answer-block">
+			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+			<div class="answer-block__text">
+				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
+			</div>
+			<div class="answer-block__btn">
+				<button>Отправить</button>
+			</div>
+		</div>
+	</div>
 
 	<footer class="cabinet-wrapper__footer">
 		<ul class="footer-list">

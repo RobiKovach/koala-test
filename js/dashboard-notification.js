@@ -1,3 +1,5 @@
+//tab
+
 const open = document.getElementById('open');
 const closed = document.getElementById('closed');
 const openBtn = document.querySelector('.switch-left__btn');
@@ -46,3 +48,16 @@ openSelectBtn.addEventListener('click', (event) => {
     } 
 })
 
+//popup
+
+const popupBtn = document.getElementById('0001');
+const popupWindow = document.getElementById('P0001');
+const popupClose = document.querySelector('.block-popup__bg');
+
+popupBtn.addEventListener('click', () => {
+  popupWindow.style.display = "flex";
+})
+
+popupClose.addEventListener('click', () => {
+  popupWindow.style.display = "none";
+})
