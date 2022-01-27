@@ -111,15 +111,19 @@
 					<div class="select-right__box-select">
 						<div class="box-select__item item-box">
 							<input type="checkbox" class="item-box__input" id="item-box__check1">
-							<label id="check1" for="item-box__check1">Option 1</label>
+							<label id="check1" for="item-box__check1">по Номеру</label>
 						</div>
 						<div class="box-select__item item-box">
 							<input type="checkbox" class="item-box__input" id="item-box__check2">
-							<label id="check2" for="item-box__check2">Option 2</label>
+							<label id="check2" for="item-box__check2">по Дате создания</label>
 						</div>
-						<div class="box-select__item item-box">
+						<div class="box-select__item item-box item-box-open">
 							<input type="checkbox" class="item-box__input" id="item-box__check3">
-							<label id="check3" for="item-box__check3">Option 3</label>
+							<label id="check3" for="item-box__check3">Непрочитаные</label>
+						</div>
+						<div class="box-select__item item-box item-box-closed">
+							<input type="checkbox" class="item-box__input" id="item-box__check4">
+							<label id="check4" for="item-box__check4">по Дате закрытия</label>
 						</div>
 					</div>
                 </div>
@@ -130,20 +134,24 @@
 			<div class="content-notification__table table-content">
 				<div class="table-content__head head-table">
 					<div class="head-table__item">#</div>
-					<div class="head-table__item">Type</div>
+					<div class="head-table__item">Тип</div>
 					<div class="head-table__item">User</div>
-					<div class="head-table__item">Date</div>
-					<div class="head-table__item">Comment</div>
-					<div class="head-table__item">Status</div>
-					<div class="head-table__item">Action</div>
+					<div class="head-table__item">Создано</div>
+					<div class="head-table__item item-box-closed">Закрыто</div>
+					<div class="head-table__item">Уведомление</div>
+					<div class="head-table__item item-box-closed">Ответ</div>
+					<div class="head-table__item item-box-open">Статус</div>
+					<div class="head-table__item">Действие</div>
 				</div>
 				<div class="table-content__column column-table">
 					<div class="column-table__item">0001</div>
 					<div class="column-table__item">dangerous</div>
 					<div class="column-table__item">Damage100</div>
 					<div class="column-table__item">24.11.2021</div>
+					<div class="column-table__item item-box-closed">24.11.2021</div>
 					<div class="column-table__item">Благородные стремления не спасут: кровь стынет в жилах</div>
-					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Благородные стремления не спасут: кровь стынет в жилах</div>
+					<div class="column-table__item item-box-open"><img src="img/status-ok.svg" alt=""></div>
 					<div class="column-table__item"><button id="0001" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -151,8 +159,10 @@
 					<div class="column-table__item">beautiful</div>
 					<div class="column-table__item">Worms</div>
 					<div class="column-table__item">29.11.2021</div>
+					<div class="column-table__item item-box-closed">29.11.2021</div>
 					<div class="column-table__item">Органический трафик не стал ограничивающим фактором</div>
-					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Органический трафик не стал ограничивающим фактором</div>
+					<div class="column-table__item item-box-open"><img src="img/statusNo.svg" alt=""></div>
 					<div class="column-table__item"><button id="0002" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -160,8 +170,10 @@
 					<div class="column-table__item">simplex</div>
 					<div class="column-table__item">PizZaMan</div>
 					<div class="column-table__item">02.12.2021</div>
+					<div class="column-table__item item-box-closed">02.12.2021</div>
 					<div class="column-table__item">Сейчас всё чаще звучит ласковый перезвон вертикали власти</div>
-					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Сейчас всё чаще звучит ласковый перезвон вертикали власти</div>
+					<div class="column-table__item item-box-open"><img src="img/statusNo.svg" alt=""></div>
 					<div class="column-table__item"><button id="0003" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -169,8 +181,10 @@
 					<div class="column-table__item">complex </div>
 					<div class="column-table__item">Omicron4ik</div>
 					<div class="column-table__item">21.01.2022</div>
+					<div class="column-table__item item-box-closed">21.01.2022</div>
 					<div class="column-table__item">Современная методология разработки показала себя во всей красе</div>
-					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Современная методология разработки показала себя во всей красе</div>
+					<div class="column-table__item item-box-open"><img src="img/statusNo.svg" alt=""></div>
 					<div class="column-table__item"><button id="0004" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -178,8 +192,10 @@
 					<div class="column-table__item">dangerous</div>
 					<div class="column-table__item">DaVinchy</div>
 					<div class="column-table__item">24.11.2021</div>
+					<div class="column-table__item item-box-closed">24.11.2021</div>
 					<div class="column-table__item">Частотность поисковых запросов даёт нам право принимать самостоятельные решения</div>
-					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Частотность поисковых запросов даёт нам право принимать самостоятельные решения</div>
+					<div class="column-table__item item-box-open"><img src="img/status-ok.svg" alt=""></div>
 					<div class="column-table__item"><button id="0005" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -187,8 +203,10 @@
 					<div class="column-table__item">beautiful</div>
 					<div class="column-table__item">Table_4</div>
 					<div class="column-table__item">29.11.2021</div>
+					<div class="column-table__item item-box-closed">29.11.2021</div>
 					<div class="column-table__item">Британские ученые заявили, что жизнь прекрасна</div>
-					<div class="column-table__item"><img src="img/status-ok.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Британские ученые заявили, что жизнь прекрасна</div>
+					<div class="column-table__item item-box-open"><img src="img/status-ok.svg" alt=""></div>
 					<div class="column-table__item"><button id="0006" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -196,8 +214,10 @@
 					<div class="column-table__item">simplex</div>
 					<div class="column-table__item">PizZaMan88 1212shushistiy</div>
 					<div class="column-table__item">02.12.2021</div>
+					<div class="column-table__item item-box-closed">02.12.2021</div>
 					<div class="column-table__item">Жизнь прекрасна</div>
-					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Жизнь прекрасна</div>
+					<div class="column-table__item item-box-open"><img src="img/statusNo.svg" alt=""></div>
 					<div class="column-table__item"><button id="0007" class="answer">Answer</button></div>
 				</div>
 				<div class="table-content__column column-table">
@@ -205,8 +225,10 @@
 					<div class="column-table__item">complex</div>
 					<div class="column-table__item">_boss</div>
 					<div class="column-table__item">21.01.2022</div>
+					<div class="column-table__item item-box-closed">21.01.2022</div>
 					<div class="column-table__item">Органический трафик не позволил союзу развалиться</div>
-					<div class="column-table__item"><img src="img/statusNo.svg" alt=""></div>
+					<div class="column-table__item item-box-closed">Органический трафик не позволил союзу развалиться</div>
+					<div class="column-table__item item-box-open"><img src="img/statusNo.svg" alt=""></div>
 					<div class="column-table__item"><button id="0008" class="answer">Answer</button></div>
 				</div>
 			</div>
@@ -221,7 +243,7 @@
 		</div>
     </div>
 
-	<div id="P0001" class="popup__block block-popup">
+	<div id="0001" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0001</span></div>
@@ -244,7 +266,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
+		<div class="block-popup__answer answer-block-open">
 			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
@@ -253,8 +275,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0002" class="popup__block block-popup">
+	<div id="0002" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0002</span></div>
@@ -277,8 +305,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0002</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -286,8 +314,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0002</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0003" class="popup__block block-popup">
+	<div id="0003" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0003</span></div>
@@ -310,8 +344,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0003</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -319,8 +353,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0003</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0004" class="popup__block block-popup">
+	<div id="0004" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0004</span></div>
@@ -343,8 +383,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0004</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -352,8 +392,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0004</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0005" class="popup__block block-popup">
+	<div id="0005" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0005</span></div>
@@ -376,8 +422,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0005</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -385,8 +431,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0005</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0006" class="popup__block block-popup">
+	<div id="0006" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0006</span></div>
@@ -409,8 +461,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0006</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -418,8 +470,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0006</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0007" class="popup__block block-popup">
+	<div id="0007" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0007</span></div>
@@ -442,8 +500,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0007</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -451,8 +509,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0007</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
-	<div id="P0008" class="popup__block block-popup">
+	<div id="0008" class="popup__block block-popup">
 		<div class="block-popup__bg"></div>
 		<div class="block-popup__comment comment-block">
 			<div class="comment-block__ident"><span>#</span><span>0008</span></div>
@@ -475,8 +539,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="block-popup__answer answer-block">
-			<div class="answer-block__ident"><span>#</span><span>0001</span></div>
+		<div class="block-popup__answer answer-block-open">
+			<div class="answer-block__ident"><span>#</span><span>0008</span></div>
 			<div class="answer-block__text">
 				<textarea name="popup" id="" cols="55" rows="5" placeholder="Напишите ответ!"></textarea>
 			</div>
@@ -484,7 +548,14 @@
 				<button>Отправить</button>
 			</div>
 		</div>
+		<div class="block-popup__answer answer-block-close">
+			<div class="answer-block__ident"><span>#</span><span>0008</span></div>
+			<div class="answer-block__text">
+				<span>Текст ответа</span>
+			</div>
+		</div>
 	</div>
+	
 
 	<footer class="cabinet-wrapper__footer">
 		<ul class="footer-list">

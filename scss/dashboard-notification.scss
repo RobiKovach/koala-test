@@ -233,6 +233,14 @@ $mainBoxSizing: border-box;
     }
 }
 
+.item-box-open{
+    display: flex;
+}
+
+.item-box-closed{
+    display: none!important;
+}
+
 //====================================================================================================
 
 
@@ -277,6 +285,25 @@ $mainBoxSizing: border-box;
             background: #D6E3EF;
         }
     }
+
+    .head-close {
+        gap: 35px;
+
+    }
+    .column-close {
+        gap: 35px;
+
+        &__item{
+            &:nth-child(6) {
+                width: 200px;
+            }
+
+            &:nth-child(7) {
+                width: 200px;
+            }
+        }
+        
+    }
 }
 
 .head-table {
@@ -307,7 +334,11 @@ $mainBoxSizing: border-box;
             }
         }
 
-        &:nth-child(5) {
+        &:nth-child(6) {
+            width: 300px;
+        }
+
+        &:nth-child(7) {
             width: 300px;
         }
     }    
@@ -345,7 +376,15 @@ $mainBoxSizing: border-box;
             width: 90px;
         }
 
-        &:nth-child(5) {
+        &:nth-child(6) {
+            width: 300px;
+            text-decoration-line: underline;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        &:nth-child(7) {
             width: 300px;
             text-decoration-line: underline;
             display: flex;
