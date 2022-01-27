@@ -13,6 +13,7 @@ const headTable = document.querySelector('.head-table');
 const columnTable = document.querySelectorAll('.column-table');
 const answerOpen = document.querySelectorAll('.answer-block-open');
 const answerClose = document.querySelectorAll('.answer-block-close');
+const popComentBtn = document.querySelectorAll('.action-comment__btn');
 
 
 for (var i=0; i<input.length; i++) {
@@ -52,6 +53,11 @@ for (var i=0; i<input.length; i++) {
         answerClose.forEach(answer => {
           answer.style.display = `flex`;
         })
+        popComentBtn.forEach(popComB => {
+          popComB.classList.contains('item-box-open');
+          popComB.classList.add('item-box-closed');
+          popComB.classList.remove('item-box-open');
+        })
         
     } else if (open.checked) {
       openBtn.style = `background: linear-gradient(183.6deg, #F1FAFF 25.58%, #E9F1F8 66.56%); box-shadow: -6px -6px 12px rgba(255, 255, 255, 0.43),
@@ -86,6 +92,11 @@ for (var i=0; i<input.length; i++) {
         })
         answerClose.forEach(answer => {
           answer.style.display = `none`;
+        })
+        popComentBtn.forEach(popComB => {
+          popComB.classList.contains('item-box-closed');
+          popComB.classList.add('item-box-open');
+          popComB.classList.remove('item-box-closed');
         })
     };
     })
@@ -125,7 +136,6 @@ for(var i = 0; i < popupLinks.length; i++){
       } else {
         popupW.style.display = `none`;
       }
-      
     })
   });
 }
