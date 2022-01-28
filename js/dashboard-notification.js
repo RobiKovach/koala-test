@@ -149,3 +149,58 @@ popupClose.forEach(popupBG => {
   })
 })
 
+//mobile-table
+const mobHead = document.querySelectorAll('.head-table__item');
+const mobColumn = document.querySelectorAll('.column-table');  
+const mobColumnItem = document.querySelectorAll('.column-table__item');
+
+
+
+mobColumn.forEach(mobColumn => {
+
+//user
+const userTag = document.createElement('div');
+userTag.classList.add('user-tag');
+const textUser = document.createTextNode('Ник');
+mobColumn.childNodes[5].classList.add('user')
+mobColumn.childNodes[5].appendChild(userTag);
+userTag.appendChild(textUser);
+
+
+//date-create
+const dataCreate = document.createElement('div')
+dataCreate.classList.add('date-create-tag');
+const textDateCreate = document.createTextNode('Создано');
+mobColumn.childNodes[7].classList.add('date-create');
+mobColumn.childNodes[7].appendChild(dataCreate);
+dataCreate.appendChild(textDateCreate);
+
+
+
+//date-closed
+const dataClosed = document.createElement('div');
+dataClosed.classList.add('date-closed-tag');
+const textDateClosed = document.createTextNode('Закрыто');
+mobColumn.childNodes[9].classList.add('date-closed');
+mobColumn.childNodes[9].appendChild(dataClosed);
+dataClosed.appendChild(textDateClosed);
+
+//notice
+const notice = document.createElement('div')
+notice.classList.add('notice-tag');
+const textNotice = document.createTextNode('Уведомление');
+mobColumn.childNodes[11].classList.add('notice')
+mobColumn.childNodes[11].appendChild(notice);
+notice.appendChild(textNotice);
+
+//answer
+const answer = document.createElement('div')
+answer.classList.add('answer-tag');
+const textAnswer = document.createTextNode('Уведомление');
+mobColumn.childNodes[13].classList.add('answer-block')
+mobColumn.childNodes[13].appendChild(answer);
+answer.appendChild(textAnswer);
+
+})
+
+
