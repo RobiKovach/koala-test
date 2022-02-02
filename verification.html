@@ -109,6 +109,29 @@
         <div class="verification">
             <div class="verification__boxheader boxheader-verification">
                 <div class="boxheader-verification__text">Верификация</div>
+                <div class="boxheader-verification__more">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="boxheader-verification__filter filter-verification">
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="All-ver-mob" class="item-filter__input">
+                        <label for="All-ver-mob">All</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="no-approved-ver-mob" class="item-filter__input">
+                        <label for="no-approved-ver-mob">No approved</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="approved-ver-mob" class="item-filter__input">
+                        <label for="approved-ver-mob">Approved</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="new-ver-mob" class="item-filter__input">
+                        <label for="new-ver-mob">New</label>
+                    </div>
+                </div>
                 <div class="boxheader-verification__checkbox checkbox-header">
                     <div class="checkbox-header__item item-checkbox">
                         <input type="checkbox" id="All">
@@ -301,6 +324,246 @@
 			    <button class="pagination-control__arrow-next"><span></span></button>
 		    </div>
         </div>
+        <!-- /.verification -->
+        <div class="integration">
+            <div class="integration__boxheader boxheader-integration">
+                <div class="boxheader-integration__title">Идентификация</div>
+                <div class="boxheader-integration__more">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="boxheader-integration__filter filter-boxheader">
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="All-int-mob" class="item-filter__input">
+                        <label for="All-int-mob">All</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="no-approved-int-mob" class="item-filter__input">
+                        <label for="no-approved-int-mob">No approved</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="approved-int-mob" class="item-filter__input">
+                        <label for="approved-int-mob">Approved</label>
+                    </div>
+                    <div class="filter-boxheader__item item-filter">
+                        <input type="checkbox" id="new-int-mob" class="item-filter__input">
+                        <label for="new-int-mob">New</label>
+                    </div>
+                </div>
+                <div class="boxheader-integration__checkbox checkbox-header">
+                    <div class="checkbox-header__item item-checkbox">
+                        <input type="checkbox" id="All-int">
+                        <label for="All-int">All</label>
+                    </div>
+                    <div class="checkbox-header__item item-checkbox">
+                        <input type="checkbox" id="no-approved-int" class="item-checkbox__input">
+                        <label for="no-approved-int">No approved</label>
+                    </div>
+                    <div class="checkbox-header__item item-checkbox">
+                        <input type="checkbox" id="approved-int" class="item-checkbox__input">
+                        <label for="approved-int">Approved</label>
+                    </div>
+                    <div class="checkbox-header__item item-checkbox">
+                        <input type="checkbox" id="new-int" class="item-checkbox__input">
+                        <label for="new-int">New</label>
+                    </div>
+                </div>
+            </div>
+            <div class="integration__table">
+                <div class="integration-table__head head-integration">
+                    <div class="head-integration__item">#INT <br> #IND</div>
+                    <div class="head-integration__item">User</div>
+                    <div class="head-integration__item">Channel profile link</div>
+                    <div class="head-integration__item">Integration link</div>
+                    <div class="head-integration__item">Status</div>
+                    <div class="head-integration__item">Date</div>
+                </div>
+                <!-- /.table-integration__head -->
+                <div class="integration-table__column column-integration">
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>001</span>00045</div>
+                        <div class="column-integration__item">Damage100</div>
+                        <div class="column-integration__item">
+                            <a href="">https://link.me/iasjdaw</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://link.me/iasjdaw</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved-ok.svg" alt=""></span>
+                            Approved
+                        </div>
+                        <div class="column-integration__item">
+                            24.11.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>002</span>00046</div>
+                        <div class="column-integration__item">Worms</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/Delete-active.svg" alt=""></span>
+                            No approved
+                        </div>
+                        <div class="column-integration__item">
+                            29.11.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>003</span>00047</div>
+                        <div class="column-integration__item">PizZaMan</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved.svg" alt=""></span>
+                            New
+                        </div>
+                        <div class="column-integration__item">
+                            02.12.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>004</span>00048</div>
+                        <div class="column-integration__item">Omicron4ik</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved-ok.svg" alt=""></span>
+                            Approved
+                        </div>
+                        <div class="column-integration__item">
+                            21.01.2022
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>005</span>00049</div>
+                        <div class="column-integration__item">DaVinchy</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved-ok.svg" alt=""></span>
+                            Approved
+                        </div>
+                        <div class="column-integration__item">
+                            24.11.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>006</span>00050</div>
+                        <div class="column-integration__item">Table_4</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved-ok.svg" alt=""></span>
+                            Approved
+                        </div>
+                        <div class="column-integration__item">
+                            29.11.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>007</span>00051</div>
+                        <div class="column-integration__item">PizZaMan881212sh <br> ushistiy</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved-ok.svg" alt=""></span>
+                            Approved
+                        </div>
+                        <div class="column-integration__item">
+                            02.12.2021
+                        </div>
+                    </div>
+                    <div class="column-integration__items">
+                        <div class="column-integration__item"><span>008</span>00052</div>
+                        <div class="column-integration__item">_boss</div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <a href="">https://gopro.com/goGods</a>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="column-integration__item">
+                            <span><img src="img/icon-approved.svg" alt=""></span>
+                            New
+                        </div>
+                        <div class="column-integration__item">
+                            21.01.2022
+                        </div>
+                    </div>
+                    <!-- /.column-table__items -->
+                </div>
+                <!-- /.table-integration__column -->
+                <div class="integration-table__pagination pagination-control">
+			        <button class="pagination-control__arrow-prev"></button>
+			        <button class="pagination-control__number">1</button>
+			        <button class="pagination-control__number">2</button>
+			        <button class="pagination-control__number">3</button>
+			        <button class="pagination-control__number">4</button>
+			        <button class="pagination-control__arrow-next"><span></span></button>
+		        </div>
+            </div>
+            <!-- /.integration__table -->
+        </div>
+        <!-- /.integration -->
     </section>
 
 	<footer class="cabinet-wrapper__footer">
